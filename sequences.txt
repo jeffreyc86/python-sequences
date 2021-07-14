@@ -1,0 +1,7 @@
+A sequence is an ORDERED collection of items. Can refer to individual items by their index position.
+
+Three basic types - lists, tuples, and ranges
+
+All sequence types can be iterated over, which means they're also iterable types.
+
+
