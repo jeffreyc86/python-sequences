@@ -4,4 +4,13 @@ Three basic types - lists, tuples, and ranges
 
 All sequence types can be iterated over, which means they're also iterable types.
 
+Lists are mutable and you CAN change the contents of a list.
 
+Immutable objects can not be changed. The following immutable types are built into python:
+- int
+- float
+- bool (True or False)
+- str (string)
+- tuple
+- frozenset
+- bytes
