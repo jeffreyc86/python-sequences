@@ -14,3 +14,7 @@ Immutable objects can not be changed. The following immutable types are built in
 - tuple
 - frozenset
 - bytes
+
+When an immutable object is "changed", Python creates a new object and re-attaches the name to it
+
+Mutable objects can be changed. When making changes, Python is able to change the contents of the list without creating a new one
