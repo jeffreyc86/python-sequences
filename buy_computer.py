@@ -1,20 +1,23 @@
 current_choice = "-"
 computer_parts = ["Computer", "Monitor", "Keyboard", "Mouse", "Mouse Pad", "HDMI Cable"]
+# valid_choices = [str(i) for i in range(1, len(computer_parts) + 1)]
+valid_choices = []
+for i in range(1, len(computer_parts)+1):
+    valid_choices.append(str(i))
+
 shopping_list = []  # create an empty list
 
 while current_choice != "0":
-    if current_choice in "123456":
+    if current_choice in valid_choices:
         print("Adding {} to your cart".format(computer_parts[int(current_choice)-1]))
         shopping_list.append(computer_parts[int(current_choice)-1])
     else:
         print("Please add options from the list below")
-        print("1. Computer")
-        print("2. Monitor")
-        print("3. Keyboard")
-        print("4. Mouse")
-        print("5. Mouse Pad")
-        print("6. HDMI Cable")
-        print("0. to finish")
+        # for i in range(len(computer_parts)):
+        #     print("{}. {}".format(i+1, computer_parts[i]))
+        for number, part in enumerate(computer_parts):
+            print("{}. {}".format(number + 1, part))
+        print("0. to checkout")
 
     current_choice = input()
 
