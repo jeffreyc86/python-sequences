@@ -13,4 +13,17 @@ print(id(another_list))     # 140610540762816
 
 shopping_list += ["cookies"]
 print(shopping_list)    # ['milk', 'pasta', 'eggs', 'bacon', 'bread', 'rice', 'cookies']
+
 print(id(another_list))     # 140610540762816
+
+print(another_list)    # ['milk', 'pasta', 'eggs', 'bacon', 'bread', 'rice', 'cookies']
+print(id(another_list))     # 140610540762816
+
+a = b = c = d = e = f = another_list
+
+print(a)    # ['milk', 'pasta', 'eggs', 'bacon', 'bread', 'rice', 'cookies']
+print("Adding cream")
+b.append("cream")
+print(c)    # ['milk', 'pasta', 'eggs', 'bacon', 'bread', 'rice', 'cookies', 'cream']
+print(f)    # ['milk', 'pasta', 'eggs', 'bacon', 'bread', 'rice', 'cookies', 'cream']
+print(shopping_list)    # ['milk', 'pasta', 'eggs', 'bacon', 'bread', 'rice', 'cookies', 'cream']
